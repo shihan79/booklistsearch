@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import Search from "../Search"
 
 
-const BooksView = () => {
+const ShowBooks = () => {
   const books = useSelector(state => state.bookReducer.books)
   const search = useSelector(state => state.bookReducer.search)
   const dispatch = useDispatch()
@@ -46,4 +46,4 @@ const BooksView = () => {
   )
 }
 
-export default BooksView
+export default ShowBooks
